@@ -1,11 +1,11 @@
-public class Raamat {
+public class Book {
     public String Pealkiri;
     public String Autor;
     public int lk_arv;
     public int aasta;
     public float review;
 
-    public Raamat(String pealkiri, String autor, int lk_arv, int aasta, float review) {
+    public Book(String pealkiri, String autor, int lk_arv, int aasta, float review) {
         Pealkiri = pealkiri;
         Autor = autor;
         this.lk_arv = lk_arv;
