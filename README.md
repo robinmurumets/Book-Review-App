@@ -8,11 +8,7 @@ Welcome to the **Book Review & Tracker App**, an Android application that helps 
 This app is being developed in **Java** for **Android** phones. Currently, the following core components have been implemented:
 
 ### 1. **Core Features**
-   - **Book Class**: Represents individual books with properties like title, author, and reading status.
-   - **User Class**: Handles user data such as username, book list, and review history.
-   - **Review Class**: Allows users to write and store reviews for books they have read.
-   - **UserLibrary Class**: Manages the list of books associated with a user’s account.
-   - **Library Class**: Manages a collection of books, with functionality for adding, removing, and searching books.
+   - ⚠️Under construction⚠️
    
 ### 2. **Code Structure**
    - The app is structured with a focus on **object-oriented programming (OOP)** principles, ensuring that the code is modular, reusable, and easy to maintain.
