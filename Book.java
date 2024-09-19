@@ -1,55 +1,71 @@
+import java.util.List;
 public class Book {
-    public String Pealkiri;
-    public String Autor;
-    public int lk_arv;
-    public int aasta;
-    public float review;
+    public String Title;
+    public String Author;
+    public int Page_Number;
+    public int Year;
+    private List<Review> Reviews;
 
-    public Book(String pealkiri, String autor, int lk_arv, int aasta, float review) {
-        Pealkiri = pealkiri;
-        Autor = autor;
-        this.lk_arv = lk_arv;
-        this.aasta = aasta;
-        this.review = review;
+    public Book(String title, String author, int page_Number, int year, List<Review> reviews) {
+        Title = title;
+        Author = author;
+        Page_Number = page_Number;
+        Year = year;
+        Reviews = reviews;
     }
 
-    public String getPealkiri() {
-        return Pealkiri;
+    public String getTitle() {
+        return Title;
     }
 
-    public void setPealkiri(String pealkiri) {
-        Pealkiri = pealkiri;
+    public void setTitle(String title) {
+        Title = title;
     }
 
-    public String getAutor() {
-        return Autor;
+    public String getAuthor() {
+        return Author;
     }
 
-    public void setAutor(String autor) {
-        Autor = autor;
+    public void setAuthor(String author) {
+        Author = author;
     }
 
-    public int getLk_arv() {
-        return lk_arv;
+    public int getPage_Number() {
+        return Page_Number;
     }
 
-    public void setLk_arv(int lk_arv) {
-        this.lk_arv = lk_arv;
+    public void setPage_Number(int page_Number) {
+        Page_Number = page_Number;
     }
 
-    public int getAasta() {
-        return aasta;
+    public int getYear() {
+        return Year;
     }
 
-    public void setAasta(int aasta) {
-        this.aasta = aasta;
+    public void setYear(int year) {
+        Year = year;
     }
 
-    public float getReview() {
-        return review;
+    public List<Review> getReviews() {
+        return Reviews;
     }
 
-    public void setReview(float review) {
-        this.review = review;
+    public void setReviews(List<Review> reviews) {
+        Reviews = reviews;
+    }
+
+    public void addReview(Review review) {
+        Reviews.add(review);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "Title='" + Title + '\'' +
+                ", Author='" + Author + '\'' +
+                ", Page_Number=" + Page_Number +
+                ", Year=" + Year +
+                ", Reviews=" + Reviews +
+                '}';
     }
 }
